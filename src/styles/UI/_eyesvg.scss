@@ -1,0 +1,18 @@
+.eyesvg {
+    height: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+
+    svg {
+        fill: $main_green;
+
+        &:hover {
+            fill: $main_green-hover;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.input {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid $light_gray;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 5px;
+    @include transition;
+    font-size: 18px;
+
+    &:focus-within {
+        border-color: $main_green;
+    }
+    
+    &__field {
+        width: 100%;
+        border: none;
+        background-color: none;
+        outline: none;
+        color: $black;
+        transition: all .2s ease-in-out;
+        font-size: 16px;
+        height: 100%;
+    }
+
+    &__title {
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        color: $light_gray;
+        @include transition;
+        user-select: none;
+        pointer-events: none;
+        font-size: 16px;
+    }
+
+    &__field:focus ~ &__title,
+    &__field:valid ~ &__title {
+        transform: translate(0, -30px);
+        color: $main_green;
+    }
+
+}

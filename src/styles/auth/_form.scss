@@ -1,0 +1,56 @@
+.form {
+    width: 390px;
+    min-height: 580px;
+    padding: 67px 55px 33px 55px;
+    border-radius: $border_radius;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    @include boxShadow(0 5px 10px 0 rgba(0,0,0,.1));
+    color: $black;
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__fields {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__input {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__error {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        color: $error;
+    }
+
+    &__text {
+        color: $dark_gray;
+        font-size: 14px;
+
+        .switch-form {
+            display: inline-block;
+            color: $main_green;
+            cursor: pointer;
+
+            &:hover {
+                color: $main_green-hover
+            }
+        }
+    }
+
+}

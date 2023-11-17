@@ -1,0 +1,15 @@
+.button {
+    width: 100%;
+    height: 50px;
+    background-color: $main_green;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    @include transition();
+
+    &:hover {
+        background-color: $main_green-hover;
+    }
+}
